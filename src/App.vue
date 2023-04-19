@@ -1,36 +1,31 @@
 <template>
   <div class="wrapper">
-    <Header class="heads">
-    </Header>  
-
     <div class="content">
       <div class="container">
-        <div class="description"> 
+        
           <RouterView/>
-        </div>
+        
       </div>
     </div>
 
-    <!--<footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__text">
        
         </div>
       </div>
       
-    </footer>-->
+    </footer>
   </div>
 </template>
 
 <script>
-import Header from './components/Header-comp.vue'
-
-export default {
+/*export default {
   name: 'App',
   components: {
-    Header,
+   
   }
-}
+}*/
 </script>
 
 <style>
@@ -46,24 +41,24 @@ body{
 height: 100%;
 }
 .wrapper{
-  height: 100%;
+  
   overflow: hidden;
 
   display: flex;
   flex-direction: column;
 }
-.heads{
+/*.heads{
   background: #171717;
   height: 90px;
-}
+}*/
 .content{
   flex: 1 1 auto;
-  background: #2D2D2D;
+  background: #E6E6E6;
   height: 100%;
 }
 .footer{
   height: 100px;
-  background: #171717;
+  background: #C6C6C6;
 }
 .container{
   max-width: 1180px;
@@ -83,9 +78,8 @@ height: 100%;
   width: 250px;
   height: 50px;
 
-  background: #D9D9D9;
+  background: #00BCD6;
   border-radius: 15px;
-
 
   font-family: 'Inter';
   font-style: normal;

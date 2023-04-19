@@ -1,22 +1,29 @@
 <template> 
-  
-  <div class="description__lr">
-    <div class="description__img">
-      <img src="../img/game.png" alt="game">   
+   <div class="description__img">
+     <img src="../img/homefon.png" alt="">   
+  </div>
+  <div class= "headername">
+    <div class="headername__text"> место встречи</div>
+    <div>
+      <a class="headername__text" href="">о компании </a>
+      <a class="headername__text" href="">войти</a>            
     </div>
-    <a class="btn_rl">Мобильная версия</a>
+  </div>
+  
+  <div class="description">
+  <div class="description__lr">
+     <div class="description__text">
+      <h1>Место Встречи</h1>
+      <h2>Lem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices commodo sagittis lorem magnis in elementum. Felis nisl vitae nisl ultrices sem fames. </h2>   
+    </div>
+    
+    <a class="btn_rl">зарегистрироваться</a>
   </div>
   
   <div class="description__lr">
-    <div class="description__text">
-      <h1>
-        Hues and Cues — это яркая игра, в которой перед игроками стоит задача объяснить цвета словами.
-      </h1>
-      <h2>Используя только подсказки из одного и двух слов, игроки пытаются заставить других угадать определенный оттенок из ХХХ цветов на игровом поле. Чем ближе догадки к цели, тем больше очков заработает и загадывающий, и угадывающий. Поскольку все воображают цвета по-разному, соединять цвета и подсказки никогда не было так весело! </h2>   
-    </div>
-    <a class="btn_rl">Играть</a>
+   
   </div>
-
+</div>
 </template>
 
 <script>
@@ -31,50 +38,34 @@ export default {
 
 <style scoped >
 h1{
-  font-family: 'Inter';
+  font-family: 'Oswald';
   font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 24px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 119px;
+  color: #000000;
 }
 h2{
-  font-family: 'Inter';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-.content{
-  flex: 1 1 auto;
-  background: #2D2D2D;
-  height: 100%;
-}
-.footer{
-  height: 100px;
-  background: #171717;
-}
-.container{
-  max-width: 1180px;
-  margin: 0px auto;
-  height: 100%;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #000000;
 }
 .description{
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .description__img img{
-  width: 250px;
+  position: absolute;
+  width: 600px;
+  top: 0px;
+  right: 0px;
+ z-index: 1;
 }
-
 
 .description__text{
  
@@ -88,5 +79,28 @@ h2{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+.headername{
+  margin-top:40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+
+}
+.headername__text{
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%; 
+
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #000000;
+
+
 }
 </style>
