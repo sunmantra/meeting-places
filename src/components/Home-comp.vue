@@ -1,29 +1,51 @@
 <template> 
-   <div class="description__img">
-     <img src="../img/homefon.png" alt="">   
-  </div>
+   <div class="imgfon">
+     <img src="../img/homefon.png" alt=""> 
+     <div class="imgfon__top"> 
+      <a class="headername__text" href="">о компании </a>
+      <a class="headername__text" href="">войти</a>
+    </div>             
+      <div class="imgfon__bot"><a class="headername__text" href="">учись, играй, знакомься </a></div>
+    </div>
   <div class= "headername">
     <div class="headername__text"> место встречи</div>
-    <div>
-      <a class="headername__text" href="">о компании </a>
-      <a class="headername__text" href="">войти</a>            
-    </div>
   </div>
   
   <div class="description">
-  <div class="description__lr">
+    <div class="description__lr">
      <div class="description__text">
-      <h1>Место Встречи</h1>
-      <h2>Lem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices commodo sagittis lorem magnis in elementum. Felis nisl vitae nisl ultrices sem fames. </h2>   
+        <h1>Место Встречи</h1>
+        <h3>Lem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices commodo sagittis lorem magnis in elementum. Felis nisl vitae nisl ultrices sem fames. </h3>   
+      </div> 
     </div>
-    
-    <a class="btn_rl">зарегистрироваться</a>
   </div>
-  
-  <div class="description__lr">
-   
+
+  <div class="description">
+   <a class="btn_rl">зарегистрироваться</a> 
   </div>
-</div>
+
+  <div class="carousel1">
+    <img src="../img/carousel/zagl1.png" alt="">
+  </div>
+
+  <div><h2>ТОП - 5</h2> </div>
+
+  <div class="carousel2">
+    <img src="../img/carousel/zagl2.png" alt="">
+  </div>
+
+  <div><h2>КАТЕГОРИИ</h2></div>
+
+  <div class="categori">
+    <a href="" class="categori__el">спорт </a>
+    <a href="" class="categori__el">обучение</a>
+    <a href="" class="categori__el">дети</a>
+    <a href="" class="categori__el">наука</a>
+    <a href="" class="categori__el">музыка</a>
+    <a href="" class="categori__el">другое</a>
+  </div>
+
+
 </template>
 
 <script>
@@ -46,6 +68,14 @@ h1{
   color: #000000;
 }
 h2{
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 119px;
+  color: #000000;
+}
+h3{
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -59,16 +89,29 @@ h2{
   justify-content: space-between;
   align-items: center;
 }
-.description__img img{
+
+.imgfon{
   position: absolute;
-  width: 600px;
-  top: 0px;
+  text-align: center;
   right: 0px;
- z-index: 1;
+  top: 0px;
+  height: 700px;
+}
+.imgfon img{
+  height: 100%;
+}
+.imgfon__top{
+  position: absolute;
+  top: 20px;
+  right: 16px;
+}
+.imgfon__bot{
+  position: absolute;
+  bottom: 40px;
+  right: 16px;
 }
 
 .description__text{
- 
   width: 670px;
   height: 234px;
 }
@@ -87,8 +130,6 @@ h2{
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
-
 }
 .headername__text{
   font-family: 'Oswald';
@@ -100,7 +141,58 @@ h2{
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #000000;
+}
 
+.carousel1{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
 
+.carousel2{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.categori{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 700px;
+  max-width: 900px;
+  align-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+a.categori__el {
+  height: 200px;
+  width: 350px;
+  display: flex;
+  font-family: auto;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(0 0 0);
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  outline: none;
+  /*border: 1px solid rgba(0,0,0,.1);*/
+  border-radius: 20px;
+  background: #B9B9B9;
+  transition: all .218s ease 0s;
+  justify-content: center;
+  align-items: center;
+}
+a.categori__el:hover {
+  color: rgb(24,24,24);
+  /*border: 1px solid rgb(198,198,198);*/
+  background: #a0a0a0 ;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+a.categori__el:active {
+  color: rgb(51,51,51);
+  /*border: 1px solid rgb(204,204,204);*/
+  background: rgb(238,238,238);
+  box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
 }
 </style>
