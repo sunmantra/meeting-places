@@ -1,24 +1,11 @@
 <template>
-  <div class="wrapper">
-    <div class="content">
-      <div class="container">
-        
-          <RouterView/>
-        
-      </div>
-    </div>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__text">
-       
-        </div>
-      </div>
-      
-    </footer>
-  </div>
+  
+   <div>
+     <RouterView/> 
+   </div>   
+    
+    
 </template>
-
 <script>
 /*export default {
   name: 'App',
@@ -43,14 +30,10 @@ height: 100%;
 .wrapper{
   
   overflow: hidden;
-
+ 
   display: flex;
   flex-direction: column;
 }
-/*.heads{
-  background: #171717;
-  height: 90px;
-}*/
 .content{
   flex: 1 1 auto;
   background: #E6E6E6;

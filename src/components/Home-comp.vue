@@ -1,4 +1,9 @@
 <template> 
+   <div class="wrapper">
+    <div class="content"> 
+   <div class="container">
+
+   
    <div class="imgfon">
      <img src="../img/homefon.png" alt=""> 
      <div class="imgfon__top"> 
@@ -45,7 +50,17 @@
     <a href="" class="categori__el">другое</a>
   </div>
 
-
+</div>
+  <footer class="footer">
+      <div class="container">
+        <div class="footer__text">
+       
+        </div>
+      </div>
+      
+    </footer>
+    </div>
+    </div>
 </template>
 
 <script>

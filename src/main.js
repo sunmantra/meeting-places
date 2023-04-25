@@ -6,7 +6,7 @@ import App from './App.vue'
 
 import Home from './components/Home-comp'
 import My from './components/Myprofile-comp'
-import Game from './components/Gamewin-comp'
+import Reg from './components/Reg-comp'
 
 const router = createRouter( { 
     history: createWebHistory(),   
@@ -21,9 +21,9 @@ const router = createRouter( {
         component: My
     },
     {
-        path:'/game',
-        name:'game',
-        component: Game
+        path:'/reg',
+        name:'reg',
+        component: Reg
     },
 ]
 });
