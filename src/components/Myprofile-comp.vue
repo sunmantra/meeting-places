@@ -7,23 +7,30 @@
                 <h1>Фамилия Имя</h1> 
                 </div>
                 <div class="statistic">
-                    <h1>статистика </h1>
-                    <li>всего игр сыграно:<div class="statistic__all">44</div></li>
-                    <li>к-во побед:<div class="statistic__win"></div>44</li>
-                    <li>к-во поражений:<div class="statistic__defeat">44</div></li>
+                    <li>Город:<div class="statistic__all">Красноярск</div></li>
+                    <li>Возраст:<div class="statistic__win"></div>35</li>
+                    <li>Пол:<div class="statistic__defeat">М</div></li>
                 </div>
+                
+                <div class="about">
                 </div>
-                <div class="right">
-                    <div class="right__chat">
+                расскажите о себе
+                <div class="child">
+                    <h1>ДЕТИ:</h1>
+                   <div class="bool">
+                  <h1>+</h1>
+                   </div>
+                </div>
+            </div>
 
-                    </div>
- 
+            <div class="right">
+                <p>мои подписки</p>
+                <div class="right__chat">
                 </div>
-        </div>
-        
-        <div class="btn">
-        <a class="btn_rl">назад</a>
-        <a class="btn_rl">Create</a>
+                <p>мои мероприятия</p>
+                <div class="right__chat">
+                </div>
+            </div>
         </div>
    
     </div>   
@@ -59,11 +66,14 @@ export default{
 width: 50%;
 }
 h1{
-    font-family: 'Inter';
+    font-family: 'Oswald';
     font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 44px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    text-align: center;
     letter-spacing: 0.16em;
     text-transform: uppercase;
 
@@ -80,7 +90,7 @@ li{
     letter-spacing: 0.16em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: #000000;
 }
 .logname{
     display: flex;
@@ -97,23 +107,48 @@ li{
 .logname h1{
     margin-left: 50px;
 }
-
+.statistic{
+    margin-top: 30px;
+}
 .statistic li{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 350px;
 }
 /*right*/
 .right{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
 }
 .right__chat{
-    width: 300px;
-    height: 400px;
-    background: #171717;
+    width: 400px;
+    height: 200px;
+    background: rgba(217, 217, 217, 0.52);
     border-radius: 15px;
 }
-
+.about{
+width: 500px;
+height: 150px;
+margin-top: 30px;
+background: rgba(217, 217, 217, 0.52);
+border-radius: 20px;
+}
+.child{
+    width: 500px;
+    height: 100px;
+    margin-top: 30px;
+    background: rgba(217, 217, 217, 0.52);
+}
+.bool{
+    width: 40px;
+    height: 40px;
+    background: #C6C6C6;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 </style>
