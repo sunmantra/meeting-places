@@ -3,8 +3,8 @@
         <div class="cese__struct">
             <div class="left">
                 <div class="logname">
-                <img src="../img/user.jpg" alt="">
-                <h1>логиннаме</h1> 
+                    <img src="../img/user.jpg" alt="">
+                <h1>Фамилия Имя</h1> 
                 </div>
                 <div class="statistic">
                     <h1>статистика </h1>
@@ -37,11 +37,17 @@ export default{
 
 <style scoped >
 .cese{
-    width: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
+    align-content: center;
     align-items: center;
-
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #E6E6E6;
 }
 .cese__struct{
     display: flex;
@@ -61,7 +67,7 @@ h1{
     letter-spacing: 0.16em;
     text-transform: uppercase;
 
-    color: #8472C8;
+    color: #000000;
 
 }
 li{
@@ -84,6 +90,8 @@ li{
 }
 .logname img{
     width: 150px;
+    z-index: 0;
+    border-radius: 50%;
 }
 
 .logname h1{
@@ -106,13 +114,6 @@ li{
     height: 400px;
     background: #171717;
     border-radius: 15px;
-}
-.btn{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 </style>

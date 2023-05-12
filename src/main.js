@@ -7,6 +7,7 @@ import App from './App.vue'
 import Home from './components/Home-comp'
 import My from './components/Myprofile-comp'
 import Reg from './components/Reg-comp'
+import Areg from './components/Areg-comp'
 
 const router = createRouter( { 
     history: createWebHistory(),   
@@ -24,6 +25,11 @@ const router = createRouter( {
         path:'/reg',
         name:'reg',
         component: Reg
+    },
+    {
+        path:'/areg',
+        name:'areg',
+        component: Areg
     },
 ]
 });
