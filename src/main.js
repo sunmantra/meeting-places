@@ -8,6 +8,7 @@ import Home from './components/Home-comp'
 import My from './components/Myprofile-comp'
 import Reg from './components/Reg-comp'
 import Areg from './components/Areg-comp'
+import Err from './components/error-comp'
 
 const router = createRouter( { 
     history: createWebHistory(),   
@@ -30,6 +31,11 @@ const router = createRouter( {
         path:'/areg',
         name:'areg',
         component: Areg
+    },
+    {
+        path:'/err',
+        name:'err',
+        component: Err
     },
 ]
 });
