@@ -35,7 +35,7 @@
 }
 
 .con h1{
-    font-family: 'Inter';
+    font-family: 'Oswald';
     font-style: normal;
     font-weight: 500;
     font-size: 96px;
@@ -46,7 +46,7 @@
     color: #FFFFFF;
 }
 .con h2{
-    font-family: 'Inter';
+    font-family: 'Oswald';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -67,7 +67,7 @@
   background: #eff0f0;
   border-radius: 15px;
 
-  font-family: 'Inter';
+  font-family: 'Oswald';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
