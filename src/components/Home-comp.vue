@@ -7,10 +7,10 @@
    <div class="imgfon">
      <img src="../img/homefon.png" alt=""> 
      <div class="imgfon__top"> 
-      <a class="headername__text" href="">о компании </a>
-      <a class="headername__text" href="">войти</a>
+      <router-link to="/about" class="headername__text" href="">о компании   </router-link>
+      <router-link to="/reg" class="headername__text" href="">  войти</router-link>
     </div>             
-      <div class="imgfon__bot"><a class="headername__text" href="">учись, играй, знакомься </a></div>
+      <div class="imgfon__bot"><p class="headername__text" href="">учись, играй, знакомься </p></div>
     </div>
   <div class= "headername">
     <div class="headername__text"> место встречи</div>
@@ -26,7 +26,7 @@
   </div>
 
   <div class="description">
-   <a class="btn_rl">зарегистрироваться</a> 
+   <router-link to="/areg" class="btn_rl">зарегистрироваться</router-link> 
   </div>
 
   <div class="carousel1">
@@ -74,6 +74,9 @@ export default {
 </script>
 
 <style scoped >
+a{
+  text-decoration: none;
+}
 h1{
   font-family: 'Oswald';
   font-style: normal;
@@ -147,6 +150,7 @@ h3{
   align-items: center;
 }
 .headername__text{
+  margin-right: 15px;
   font-family: 'Oswald';
   font-style: normal;
   font-weight: 500;

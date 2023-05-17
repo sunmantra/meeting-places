@@ -70,6 +70,7 @@ height: 100%;
 
   background: #00BCD6;
   border-radius: 15px;
+  cursor: pointer;
 
   font-family: 'Inter';
   font-style: normal;
@@ -85,5 +86,8 @@ height: 100%;
   text-transform: uppercase;
 
   color: rgb(52, 51, 51);
+}
+.btn_rl:hover{
+  background: #01adc0;
 }
 </style>

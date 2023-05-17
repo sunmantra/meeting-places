@@ -9,6 +9,7 @@ import My from './components/Myprofile-comp'
 import Reg from './components/Reg-comp'
 import Areg from './components/Areg-comp'
 import Err from './components/error-comp'
+import About from './components/About-comp'
 
 const router = createRouter( { 
     history: createWebHistory(),   
@@ -36,6 +37,11 @@ const router = createRouter( {
         path:'/err',
         name:'err',
         component: Err
+    },
+    {
+        path:'/about',
+        name:'About',
+        component: About
     },
 ]
 });
