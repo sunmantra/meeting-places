@@ -20,7 +20,7 @@
     <div class="description__lr">
      <div class="description__text">
         <h1>Место Встречи</h1>
-        <h3>Lem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices commodo sagittis lorem magnis in elementum. Felis nisl vitae nisl ultrices sem fames. </h3>   
+        <h3>выйди на новый уровень общения </h3>   
       </div> 
     </div>
   </div>
@@ -29,9 +29,17 @@
    <router-link to="/areg" class="btn_rl">зарегистрироваться</router-link> 
   </div>
 
+  
+ 
+  
   <div class="carousel1">
-    <img src="../img/carousel/zagl1.png" alt="">
+     <v-carousel
+    :carousel_data="sliderItems"
+  /> 
+    <!--<img src="../img/carousel/zagl1.png" alt=""> --> 
   </div>
+
+
 
   <div><h2>ТОП - 5</h2> </div>
 
@@ -65,11 +73,23 @@
 
 <script>
 
+import vCarousel from '../components/v-carousel.vue'
+
 export default {
   name: 'App',
-  components: {
-  
-  }
+  components:{
+    vCarousel
+  },
+  data(){
+    return{
+      sliderItems:[
+        {id: 1, name: 'img1', img:'1.png'},
+        {id: 2, name: 'img2', img:'2.png'},
+        {id: 3, name: 'img3', img:'3.png'},
+        {id: 4, name: 'img4', img:'4.png'},
+      ]
+    }
+  },
 }
 </script>
 
@@ -163,7 +183,7 @@ h3{
 }
 
 .carousel1{
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 100px;
 }
 
