@@ -29,23 +29,15 @@
    <router-link to="/areg" class="btn_rl">зарегистрироваться</router-link> 
   </div>
 
-  
- 
-  
   <div class="carousel1">
-     <v-carousel
-    :carousel_data="sliderItems"
-  /> 
-    <!--<img src="../img/carousel/zagl1.png" alt=""> --> 
+    <v-carousel :carousel_data="sliderItems"/> 
   </div>
-
-
 
   <div><h2>ТОП - 5</h2> </div>
 
-  <div class="carousel2">
-    <img src="../img/carousel/zagl2.png" alt="">
-  </div>
+  <!--<div class="carousel2">
+    <v-carouselTop :carousel_data="sliderTop"/> 
+  </div> -->
 
   <div><h2>КАТЕГОРИИ</h2></div>
 
@@ -87,7 +79,10 @@ export default {
         {id: 2, name: 'img2', img:'2.png'},
         {id: 3, name: 'img3', img:'3.png'},
         {id: 4, name: 'img4', img:'4.png'},
-      ]
+        {id: 5, name: 'img5', img:'5.png'},
+        {id: 6, name: 'img6', img:'6.png'},
+        
+      ] 
     }
   },
 }
