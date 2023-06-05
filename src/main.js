@@ -10,6 +10,7 @@ import Reg from './components/Reg-comp'
 import Areg from './components/Areg-comp'
 import Err from './components/error-comp'
 import About from './components/About-comp'
+import Cart from './components/Card-comp'
 
 const router = createRouter( { 
     history: createWebHistory(),   
@@ -42,6 +43,11 @@ const router = createRouter( {
         path:'/about',
         name:'About',
         component: About
+    },
+    {
+        path:'/cart',
+        name:'Cart',
+        component: Cart
     },
 ]
 });

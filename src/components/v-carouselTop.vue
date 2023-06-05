@@ -20,7 +20,7 @@
 </template>
 
 <script>
-    import vCarouselItem from './v-carousel-item.vue';
+    import vCarouselItem from './v-carouselTop-item.vue';
 
     export default{
         name:"v-carousel",
@@ -56,11 +56,12 @@
 <style scoped>
 
 .wrapp{
-    max-width: 700px;
-    max-height: 500px;
+    width: 900px;
+    height: 450px;
     overflow: hidden;
     margin: 0 auto;
-    border-radius: 20px;
+   
+    border-radius: 40px;
 }
 .v-carousel {
     display: flex;
@@ -71,7 +72,7 @@
 }
 
 .btncentr{
-    width: 900px;
+    width: 1100px;
     display: flex;
     align-content: center;
     align-items: center;

@@ -35,9 +35,9 @@
 
   <div><h2>ТОП - 5</h2> </div>
 
-  <!--<div class="carousel2">
+  <div class="carousel2">
     <v-carouselTop :carousel_data="sliderTop"/> 
-  </div> -->
+  </div>
 
   <div><h2>КАТЕГОРИИ</h2></div>
 
@@ -66,11 +66,13 @@
 <script>
 
 import vCarousel from '../components/v-carousel.vue'
+import vCarouselTop from '../components/v-carouselTop.vue'
 
 export default {
   name: 'App',
   components:{
-    vCarousel
+    vCarousel,
+    vCarouselTop
   },
   data(){
     return{
@@ -79,10 +81,11 @@ export default {
         {id: 2, name: 'img2', img:'2.png'},
         {id: 3, name: 'img3', img:'3.png'},
         {id: 4, name: 'img4', img:'4.png'},
+      ],
+      sliderTop:[
         {id: 5, name: 'img5', img:'5.png'},
         {id: 6, name: 'img6', img:'6.png'},
-        
-      ] 
+      ]
     }
   },
 }

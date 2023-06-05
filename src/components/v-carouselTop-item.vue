@@ -23,16 +23,18 @@
 
 <style scoped>
 .v-carousel-item{
-    background: #C6C6C6;
-    width: 700px;
-    height: 400px;
+   
+    width:900px ;
+    height: 450px ;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+   
 }
 .v-carousel-item img{
-    height: 350px;
-    border-radius: 15px;
+    height: 450px;
+    width: 900px;
+    
 }
 </style>
