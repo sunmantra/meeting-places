@@ -5,13 +5,13 @@
 
    
    <div class="imgfon">
-     <img src="../img/homefon.png" alt=""> 
-     <div class="imgfon__top"> 
-      <router-link to="/about" class="headername__text" href="">о компании   </router-link>
-      <router-link to="/reg" class="headername__text" href="">  войти</router-link>
-    </div>             
-      <div class="imgfon__bot"><p class="headername__text" href="">учись, играй, знакомься </p></div>
-    </div>
+      <img src="../img/homefon.png" alt=""> 
+      <div class="imgfon__top"> 
+        <router-link to="/about" class="headername__text" href="">о компании   </router-link>
+        <router-link to="/reg" class="headername__text" href="">  войти</router-link>
+      </div>             
+    <div class="imgfon__bot"><p class="headername__text" href="">учись, играй, знакомься </p></div>
+  </div>
   <div class= "headername">
     <div class="headername__text"> место встречи</div>
   </div>

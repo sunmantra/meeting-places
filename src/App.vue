@@ -90,4 +90,15 @@ height: 100%;
 .btn_rl:hover{
   background: #01adc0;
 }
+.blufon{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #cdc9c9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 </style>

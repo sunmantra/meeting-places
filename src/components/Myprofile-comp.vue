@@ -15,12 +15,6 @@
                 <div class="about">
                 </div>
                 расскажите о себе
-                <div class="child">
-                    <h1>ДЕТИ:</h1>
-                   <div class="bool">
-                  <h1>+</h1>
-                   </div>
-                </div>
             </div>
 
             <div class="right">
@@ -136,19 +130,5 @@ margin-top: 30px;
 background: rgba(217, 217, 217, 0.52);
 border-radius: 20px;
 }
-.child{
-    width: 500px;
-    height: 100px;
-    margin-top: 30px;
-    background: rgba(217, 217, 217, 0.52);
-}
-.bool{
-    width: 40px;
-    height: 40px;
-    background: #C6C6C6;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 </style>
