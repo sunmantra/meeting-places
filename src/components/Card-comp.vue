@@ -1,11 +1,43 @@
 <template>
     <div class="blufon">
        <div class="top">
-            <router-link to="/" class="top__name" href="">место встречи   </router-link>
-            <div class="top__my">мой аккаунт <div class="top__img">img</div></div>
+            <router-link to="/" class="top__name" href="">место встречи</router-link>
+            <router-link to="/my" class="top__my" href="">мой аккаунт <div class="top__img"><img src="../img/carousel/avatar.png" alt=""></div> </router-link> 
        </div>
        <div class="boodyel">
-            <div class="boodyel__list"></div> 
+            <div class="boodyel__list">
+                <div class="boodyel__menu">
+                    <div class="menu">категория<select class="menu__kategori" v-model="user">
+                        <option class="menu__element">Любая</option>
+                        <option class="menu__element">Кино</option>
+                        <option class="menu__element">Спорт</option>
+                        <option class="menu__element">Музыка</option>
+                        <option class="menu__element">Обучение</option>
+                        <option class="menu__element">Наука</option>
+                        <option class="menu__element">Дети</option>
+                        <option class="menu__element">Животные</option>
+                        <option class="menu__element">Анимация</option>
+                        <option class="menu__element">Рукоделие</option>
+                        <option class="menu__element">Игры</option>
+                        <option class="menu__element">Знакомства</option>
+                        <option class="menu__element">Природа</option></select>
+                    </div> 
+                    <div class="menu">возраст<select class="menu__kategori" v-model="user">
+                        <option class="menu__element">ну</option>
+                        <option class="menu__element">Bob</option>
+                        <option class="menu__element">Sam</option></select>
+                    </div> 
+                    <div class="menu">стоимость<select class="menu__kategori" v-model="user">
+                        <option class="menu__element">Tom</option>
+                        <option class="menu__element">Bob</option>
+                        <option class="menu__element">Sam</option></select>
+                    </div> 
+                </div>
+                <div class="list__bloc">
+
+                </div>
+
+            </div> 
             <div class="boodyel__cart"></div>
        </div>
     </div>
@@ -38,19 +70,18 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .boodyel__list{
-    width: 500px;
+    width: 590px;
     height: 600px;
-    background: #6b6b6b;
-    border-radius: 20px;
+    background: #D9D9D9;
+    border-radius: 10px;
 }
 .boodyel__cart{
     width: 500px;
     height: 600px;
 
-    background: #6b6b6b;
-    border-radius: 20px;
+    background: #D9D9D9;
+    border-radius: 10px;
 }
 .top__name{
   margin-right: 15px;
@@ -63,8 +94,8 @@
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #000000;
+  text-decoration: none;
 }
-
 .top__my{
     display: flex;
     margin-right: 15px;
@@ -81,12 +112,77 @@
     align-content: center;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;
 }
-.top__img{
+.top__img img{
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background: #ffffff;
     margin-left: 10px;
+}
+.boodyel__menu{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background: #D9D9D9;
+    border-radius: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid #888888;
+}
+.menu{
+    height: 50px;
+    display: flex;
+    background: #D9D9D9;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+.menu__kategori{
+    width: 80px;
+    height: 30px;
+    margin-left: 10px;
+    background: #F2F2F2;
+    border-radius: 5px;
+    border: 0px;
+}
+.menu__element{
+    width: 90px;
+    height: 20px;
+    margin-left: 10px;
+    background: #F2F2F2;
+    border-radius: 5px;
+    border: 1px;
+
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+.list__bloc{
+    height: 550px;
+    display: flex;
+    background: #7633335e;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 </style>

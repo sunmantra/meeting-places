@@ -94,7 +94,7 @@ height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background: #cdc9c9;
+    background: #E6E6E6;
     position: fixed;
     top: 0;
     left: 0;

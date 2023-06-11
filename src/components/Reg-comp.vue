@@ -2,18 +2,36 @@
     <div class="blufon">
         <div class="fonreg">
             <div class="fonreg__btn">
-                <input class="login" type="text" placeholder="  ЛОГИН" name="login" required>
-                <input class="password" type="text" placeholder="  ПАРОЛЬ" name="password" required>   
+                <input v-model="login" class="login" type="text" placeholder="  ЛОГИН" name="login" required>
+                <input v-model="psaww" class="password" type="text" placeholder="  ПАРОЛЬ" name="password" required>   
             </div>
-            <div class="fonreg__btn">
-                <a class="btn_rl" href="">войти</a>
-                <a class="regtext" href="">регистрация</a>
+            <div id="btnin" class="fonreg__btn">
+                
+                <router-link to="/cart" class="btn_rl" href="">войти  </router-link>
+                <router-link to="/Areg" class="regtext" href="">регистрация  </router-link>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+
+/*export default {
+  name: 'App',
+  components:{
+  
+  },
+  methods: {
+    greet(event) {
+      // `this` в методе указывает на текущий активный экземпляр
+      alert('Привет, ' + this.name + '!')
+      // `event` — нативное событие DOM
+      if (event) {
+        alert(event.target.tagName)
+      }
+    }
+  }
+}.mount('#event-with-method')*/
 
 </script>
 
