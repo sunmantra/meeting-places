@@ -47,7 +47,7 @@ height: 100%;
   height: 100%;
 }
 .footer{
-  height: 100px;
+  height: 150px;
   background: #C6C6C6;
 }
 .container{
@@ -84,21 +84,22 @@ height: 100%;
 
   letter-spacing: 0.16em;
   text-transform: uppercase;
-
+  transition: all .218s ease 0s;
   color: rgb(52, 51, 51);
 }
 .btn_rl:hover{
   background: #01adc0;
+  transform: 1s;
 }
 .blufon{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background: #E6E6E6;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #E6E6E6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>

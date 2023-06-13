@@ -1,6 +1,6 @@
 <template>
     <div class="btncentr">
-        <button id="P" @click="prevslide">^</button>
+        <button  @click="prevslide"><img src="../img/L.png" alt=""></button>
         <div class="wrapp">
             <div class='v-carousel' :style="{'margin-left':'-'+(100*currentSlideIndex)+'%'}">
                 <div class="elcar">
@@ -14,7 +14,7 @@
             </div> 
             
         </div>
-        <button id="N" @click="nextslide">^</button> 
+        <button @click="nextslide"><img src="../img/R.png" alt=""></button> 
     </div>
     
 </template>
@@ -92,11 +92,10 @@
     font-weight: 700;
     font-size: 48px;
     color: #000000;
+    cursor: pointer;
 }
-#P{
-    transform: rotate(-90deg);
+.btncentr button:hover{
+    background: #01adc0;
 }
-#N{
-    transform: rotate(90deg);
-}
+
 </style>

@@ -6,12 +6,13 @@
    
    <div class="imgfon">
       <img src="../img/homefon.png" alt=""> 
+      <div class="imgfon__sc8"><img src="../img/sc8.png" alt=""></div>
       <div class="imgfon__top"> 
-        <router-link to="/about" class="headername__text" href="">о компании   </router-link>
-        <router-link to="/reg" class="headername__text" href="">  войти</router-link>
+        <router-link id="texthover" to="/about" class="headername__text" href="">о компании   </router-link>
+        <router-link id="texthover" to="/reg" class="headername__text" href="">  войти</router-link>
       </div>             
-    <div class="imgfon__bot"><p class="headername__text" href="">учись, играй, знакомься </p></div>
-  </div>
+     <div class="imgfon__bot"><p class="headername__text" href="">учись, играй, знакомься </p></div>
+   </div>
   <div class= "headername">
     <div class="headername__text"> место встречи</div>
   </div>
@@ -23,6 +24,7 @@
         <h3>выйди на новый уровень общения </h3>   
       </div> 
     </div>
+
   </div>
 
   <div class="description">
@@ -54,13 +56,21 @@
   <footer class="footer">
       <div class="container">
         <div class="footer__text">
-       
+          <h3>О нас</h3> 
+          О компании
+          Контаакты
+          "Место Встречи" в соц. сетях
+        </div>
+        <div class="footer__text">
+          О нас
+          О компании
+          Контаакты
+          "Место Встречи" в соц. сетях
         </div>
       </div>
-      
     </footer>
-    </div>
-    </div>
+  </div>
+</div>
 </template>
 
 <script>
@@ -146,7 +156,14 @@ h3{
   bottom: 40px;
   right: 16px;
 }
-
+.imgfon__sc8{
+  position: absolute;
+  text-align: center;
+  margin-top: 60px;
+  right: 0px;
+  top: 0px;
+  height: 450px;
+}
 .description__text{
   width: 670px;
   height: 234px;
@@ -231,5 +248,10 @@ a.categori__el:active {
   /*border: 1px solid rgb(204,204,204);*/
   background: rgb(238,238,238);
   box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+}
+
+#texthover:hover{
+  transition: all .218s ease 0s;
+  color: rgb(238,238,238);
 }
 </style>

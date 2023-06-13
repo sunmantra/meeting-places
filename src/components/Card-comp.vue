@@ -34,7 +34,47 @@
                     </div> 
                 </div>
                 <div class="list__bloc">
-
+                        <router-link to="/cartel" class="list__element"> 
+  
+                            <img src="../img/cart/1.png" alt="">
+                            <div>
+                                <p>Цена: бесплатно   Категория: природа, 50+</p> 
+                                <h2 >Поход на столбы</h2>
+                                <p>10:00, ocт.Турбаза</p>
+                            </div>
+                        </router-link>
+                        <router-link to="/cartel" class="list__element"> 
+                            <img src="../img/cart/2.png" alt="">
+                            <div>
+                                <p>Цена: 100p   Категория: наука</p> 
+                                <h2 >лекция “краткая история времени”</h2>
+                                <p>18:30, мвц Сибирь</p>
+                            </div>
+                        </router-link>
+                        <router-link to="/cartel" class="list__element"> 
+                            <img src="../img/cart/3.png" alt="">
+                            <div>
+                                <p>Цена: бесплатно   Категория: игры</p> 
+                                <h2 >Турнир CSGO</h2>
+                                <p>20:00, онлайн</p>
+                            </div>
+                        </router-link>
+                        <router-link to="/cartel" class="list__element">
+                            <img src="../img/cart/4.png" alt="">
+                            <div>
+                                <p>Цена: бесплатно   Категория: музыка</p> 
+                                <h2 >Гитарник</h2>
+                                <p>18:00, Центральный парк</p>
+                            </div>
+                        </router-link>
+                        <router-link to="/cartel" class="list__element"> 
+                            <img src="../img/cart/1.png" alt="">
+                            <div>
+                                <p>Цена: бесплатно   Категория: природа, 50+</p> 
+                                <h2 >Поход на столбы</h2>
+                                <p>10:00, ocт.Турбаза</p>
+                            </div>
+                        </router-link>
                 </div>
 
             </div> 
@@ -48,7 +88,29 @@
 </script>
 
 <style scoped>
+p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
 
+    color: #000000;
+   
+}
+h2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.16em;
+   
+
+    color: #000000;
+}
 .top{
     display: flex;
     width: 1180px;
@@ -158,6 +220,7 @@
     background: #F2F2F2;
     border-radius: 5px;
     border: 0px;
+    text-transform: uppercase;
 }
 .menu__element{
     width: 90px;
@@ -175,14 +238,36 @@
     line-height: 14px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
+    text-decoration: none;
 }
 .list__bloc{
-    height: 550px;
+    height: 540px;
     display: flex;
-    background: #7633335e;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow-y: scroll; /* прокрутка по вертикали */
+    overflow-x: hidden;
+}
+.list__element{
+    height: 180px;
+    width: 550px;
+    margin-top: 5px;
+    display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    background: #F2F2F2;
+    border: 1px solid #A8A8A8;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.list__element img{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 </style>
