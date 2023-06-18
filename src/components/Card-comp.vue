@@ -78,16 +78,29 @@
                 </div>
 
             </div> 
-            <div class="boodyel__cart"></div>
+            <div class="boodyel__cart">
+                <div style="position:relative;overflow:hidden;">
+                    <iframe class="maps" src="https://yandex.ru/map-widget/v1/?um=constructor%3A574b8317d4c73202d867b008a7a0904196c19ae285c089217dca46b7534572c9&amp;source=constructor" 
+                        width="500" height="600" 
+                        frameborder="0">
+                     </iframe>
+                </div>
+                
+            </div>
        </div>
     </div>
 </template>
-
 <script>
 
 </script>
 
 <style scoped>
+.maps{
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+}
+
 p{
     font-family: 'Inter';
     font-style: normal;
