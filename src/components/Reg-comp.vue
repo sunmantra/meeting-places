@@ -87,6 +87,7 @@
     text-transform: uppercase;
     color: #000000;
     border: 1px solid #C6C6C6;
+    text-decoration: none;
 }
 .fonreg__btn{
     display: flex;

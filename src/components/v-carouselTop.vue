@@ -56,7 +56,7 @@
 <style scoped>
 
 .wrapp{
-    width: 900px;
+    width: 840px;
     height: 450px;
     overflow: hidden;
     margin: 0 auto;

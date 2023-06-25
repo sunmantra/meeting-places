@@ -10,6 +10,7 @@ import Err from './components/error-comp'
 import About from './components/About-comp'
 import Cart from './components/Card-comp'
 import CartEl from './components/CardEl-comp'
+import Addcard from './components/Addcard-comp'
 
 const router = createRouter( { 
     history: createWebHistory(),   
@@ -53,6 +54,12 @@ const router = createRouter( {
         name:'CartEl',
         component: CartEl
     },
+    {
+        path:'/Addcard',
+        name:'Addcard',
+        component: Addcard
+    },
+    
 ]
 });
 createApp(App)

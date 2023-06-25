@@ -21,7 +21,7 @@
     <div class="description__lr">
      <div class="description__text">
         <h1>Место Встречи</h1>
-        <h3>выйди на новый уровень общения </h3>   
+        <h3>выйди на новый уровень общения, создавай встречи, находи новых знакомых  </h3>   
       </div> 
     </div>
 
@@ -29,6 +29,9 @@
 
   <div class="description">
    <router-link to="/areg" class="btn_rl">зарегистрироваться</router-link> 
+    <div class="strel">
+      <img src="../img/homestrel.png" alt=""/>
+    </div>
   </div>
 
   <div class="carousel1">
@@ -41,32 +44,24 @@
     <v-carouselTop :carousel_data="sliderTop"/> 
   </div>
 
-  <div><h2>КАТЕГОРИИ</h2></div>
-
-  <div class="categori">
-    <a href="" class="categori__el">спорт </a>
-    <a href="" class="categori__el">обучение</a>
-    <a href="" class="categori__el">дети</a>
-    <a href="" class="categori__el">наука</a>
-    <a href="" class="categori__el">музыка</a>
-    <a href="" class="categori__el">другое</a>
-  </div>
-
 </div>
   <footer class="footer">
       <div class="container">
-        <div class="footer__text">
-          <h3>О нас</h3> 
-          О компании
-          Контаакты
-          "Место Встречи" в соц. сетях
+        <div style="display: flex;">
+            <div class="footer__text">
+            <h3>О нас</h3> 
+            <p>О компании</p> 
+            <p>Контакты</p>
+            
+          </div>
+          <div class="footer__text">
+            <h3>"Место Встречи" в соц. сетях</h3> 
+            <img style="margin-left: 50px;" src="../img/icon/instagram.svg" alt="">
+            <img style="margin-left: 50px;" src="../img/icon/telegram.svg" alt="">
+            <img style="margin-left: 50px;" src="../img/icon/twitter.svg" alt="">
+          </div>
         </div>
-        <div class="footer__text">
-          О нас
-          О компании
-          Контаакты
-          "Место Встречи" в соц. сетях
-        </div>
+        
       </div>
     </footer>
   </div>
@@ -200,6 +195,7 @@ h3{
 .carousel1{
   margin-top: 30px;
   margin-bottom: 100px;
+  margin-left: 50px;
 }
 
 .carousel2{
@@ -207,51 +203,32 @@ h3{
   margin-bottom: 100px;
 }
 
-.categori{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 700px;
-  max-width: 900px;
-  align-content: space-around;
-  justify-content: space-between;
-  margin-bottom: 60px;
-}
-a.categori__el {
-  height: 200px;
-  width: 350px;
-  display: flex;
-  font-family: auto;
-  font-size: 40px;
-  font-weight: bold;
-  color: rgb(0 0 0);
-  text-decoration: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  outline: none;
-  /*border: 1px solid rgba(0,0,0,.1);*/
-  border-radius: 20px;
-  background: #B9B9B9;
-  transition: all .218s ease 0s;
-  justify-content: center;
-  align-items: center;
-}
-a.categori__el:hover {
-  color: rgb(24,24,24);
-  /*border: 1px solid rgb(198,198,198);*/
-  background: #a0a0a0 ;
-  box-shadow: 0 1px 2px rgba(0,0,0,.1);
-}
-a.categori__el:active {
-  color: rgb(51,51,51);
-  /*border: 1px solid rgb(204,204,204);*/
-  background: rgb(238,238,238);
-  box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
-}
 
 #texthover:hover{
   transition: all .218s ease 0s;
   color: rgb(238,238,238);
+}
+
+.strel{
+  width: 50px;
+  margin-right: 45%;
+  margin-top: 20px;
+}
+.strel img{
+  width: 50px;
+}
+
+.footer__text{
+  width: 350px;
+  margin-left: 20px;
+}
+
+.footer__text p{
+  color: var(--text-day, #000);
+font-size: 14px;
+font-family: Open Sans;
+line-height: 140%;
+letter-spacing: 2.94px;
+text-transform: uppercase;
 }
 </style>

@@ -88,6 +88,7 @@ height: 100%;
   text-transform: uppercase;
   transition: all .218s ease 0s;
   color: rgb(52, 51, 51);
+  text-decoration: none;
 }
 .btn_rl:hover{
   background: #01adc0;

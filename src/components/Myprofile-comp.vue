@@ -3,13 +3,13 @@
         <div class="cese__struct">
             <div class="left">
                 <div class="logname">
-                    <img src="../img/user.jpg" alt="">
-                <h1>Фамилия Имя</h1> 
+                    <img src="../img/icon/AVATAR.png" alt="">
+                <h1>Ирина Дымченко</h1> 
                 </div>
                 <div class="statistic">
                     <li>Город:<div class="statistic__all">Красноярск</div></li>
-                    <li>Возраст:<div class="statistic__win"></div>35</li>
-                    <li>Пол:<div class="statistic__defeat">М</div></li>
+                    <li>Возраст:<div class="statistic__win"></div>55</li>
+                    <li>Пол:<div class="statistic__defeat">ж</div></li>
                 </div>
                 
                 <div class="about">
@@ -69,7 +69,7 @@ h1{
     align-items: center;
     text-align: center;
     letter-spacing: 0.16em;
-    text-transform: uppercase;
+   
 
     color: #000000;
 
