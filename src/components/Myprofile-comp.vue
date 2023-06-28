@@ -12,18 +12,23 @@
                     <li>Пол:<div class="statistic__defeat">ж</div></li>
                 </div>
                 
-                <div class="about">
+                
+               <p style="margin-top: 100px; ">расскажите о себе</p> 
+               <div class="about">
                 </div>
-                расскажите о себе
+                <router-link to="/areg" class="btn_rl">изменить</router-link> 
+   
             </div>
 
             <div class="right">
                 <p>мои подписки</p>
                 <div class="right__chat">
                 </div>
-                <p>мои мероприятия</p>
+                <p style="margin-top: 40px; ">мои мероприятия</p>
                 <div class="right__chat">
                 </div>
+                <router-link to="/Addcard" class="btn_rl">создать событие</router-link> 
+   
             </div>
         </div>
    
@@ -37,6 +42,15 @@ export default{
 </script>
 
 <style scoped >
+
+p{
+    color: #000;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 500;
+    letter-spacing: 2.56px;
+    text-transform: uppercase;
+}
 .cese{
     display: flex;
     flex-direction: column;
@@ -110,7 +124,6 @@ li{
     align-items: center;
     width: 350px;
 }
-/*right*/
 .right{
     display: flex;
     flex-direction: column;
@@ -126,7 +139,7 @@ li{
 .about{
 width: 500px;
 height: 150px;
-margin-top: 30px;
+
 background: rgba(217, 217, 217, 0.52);
 border-radius: 20px;
 }

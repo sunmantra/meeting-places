@@ -84,8 +84,7 @@
                         width="500" height="600" 
                         frameborder="0">
                      </iframe>
-                </div>
-                
+                </div>  
             </div>
        </div>
     </div>
@@ -170,6 +169,14 @@ h2{
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+.top__name:hover{
+    color: #ffffff; 
+    transition: all .218s ease 0s;
+}
+.top__my:hover{
+    color: #ffffff; 
+    transition: all .218s ease 0s;
 }
 .top__my{
     display: flex;
@@ -275,6 +282,10 @@ h2{
     border: 1px solid #A8A8A8;
     border-radius: 10px;
     text-decoration: none;
+}
+.list__element:hover{
+    background: #00BCD6;
+    transition: all .218s ease 0s;
 }
 .list__element img{
     margin-left: 20px;

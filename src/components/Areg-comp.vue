@@ -2,17 +2,17 @@
     <div class="blufon">
         <div class="fonreg">
             <div class="fonreg__btn">
- 
+                <p>станьте участником “место встречи” прямо сейчас</p>
                 <input class="imputbar" id="name" type="text" placeholder="  ИМЯ" name="login" required>
                 <input class="imputbar" id="surname" type="text" placeholder="  ФАМИЛИЯ" name="password" required> 
                 <input class="imputbar" id="mail" type="text" placeholder="  ПОЧТА" name="login" required>
-               <p>Придумайте пароль от 8 символов</p>
-                <input class="imputbar" id="password" type="text" placeholder="  ПАРОЛЬ" name="password" required> 
+                <input class="imputbar" id="password" type="text" placeholder="  ЛОГИН" name="password" required> 
+                <input class="imputbar" id="password" type="password" placeholder="  ПАРОЛЬ" name="password" required> 
                 <input class="imputbar" id="password2" type="text" placeholder="  ПОВТОРИТЕ ПАРОЛЬ" name="password2" required>    
             </div>
             <div class="fonreg__btn">
-                <a class="btn_rl" href="">войти</a>
-                <a class="regtext" href="">регистрация</a>
+                <router-link to="/reg" class="btn_rl">регистрация</router-link>
+                <p style="margin-left: 90px;">уже есть аккаунт?<router-link  style="margin-left: 10px;" to="/reg" class="regtext">войти</router-link></p>
             </div>
         </div>
     </div>
@@ -24,6 +24,15 @@
 </script>
 
 <style scoped>
+p{
+    width: 376px;
+    color: var(--fon-night, #363636);
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 500;
+    letter-spacing: 2.24px;
+    text-transform: uppercase;
+}
 .blufon{
     display: flex;
     flex-direction: column;
@@ -39,8 +48,8 @@
 }
 .fonreg{
     display: flex;
-    width: 676px;
-    height: 539px;
+    width: 490px;
+    height: 600px;
     background: #e6e6e6ae;
     border: 1px solid #C6C6C6;
     border-radius: 15px;
@@ -51,7 +60,7 @@
     justify-content: space-around;
 }
 .imputbar{ 
-    width: 283.02px;
+    width: 376px;
     height: 38px;
     background: #E6E6E6;
     border: 1px solid #C6C6C6;
@@ -67,7 +76,6 @@
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: #000000;
-    border: 1px solid #C6C6C6;
     text-decoration: none;
 }
 .fonreg__btn{

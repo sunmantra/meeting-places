@@ -3,7 +3,7 @@
         <div class="fonreg">
             <div class="fonreg__btn">
                 <input v-model="login" class="login" type="text" placeholder="  ЛОГИН" name="login" required>
-                <input v-model="psaww" class="password" type="text" placeholder="  ПАРОЛЬ" name="password" required>   
+                <input type="password" v-model="password" class="password"   placeholder="  ПАРОЛЬ" name="password" required>   
             </div>
             <div id="btnin" class="fonreg__btn">
                 

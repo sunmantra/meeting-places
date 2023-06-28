@@ -71,7 +71,7 @@ height: 100%;
   height: 50px;
 
   background: #00BCD6;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
 
   font-family: 'Inter';
